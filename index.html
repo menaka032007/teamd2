@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TeamD — Where Future Engineers Learn, Build and Lead</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="logo">TEAM<span class="accent">D</span></div>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#feedback" class="nav-link">Feedback</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary join-btn">Join Us</a>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Live Hackathons Ticker -->
+  <div class="hackathon-ticker" id="hackathon-ticker" aria-label="Live hackathons">
+    <span class="ticker-label">🔥 Live Hackathons</span>
+    <div class="ticker-track-wrapper">
+      <div class="ticker-track" id="ticker-track">
+        <span class="ticker-item">Loading live hackathons…</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="badge">Empowering Future Engineers &amp; Innovators</span>
+        <h1 class="hero-title">TEAM<span class="accent">D</span></h1>
+        <h2 class="hero-subtitle">Where Future Engineers<br />Learn, Build and Lead</h2>
+        <p class="hero-text">
+          TeamD is a community of passionate engineering students dedicated to
+          innovation, technology, and research. Our primary goal is to empower
+          students with technical knowledge, support startup ideas, and create
+          opportunities for real-world engineering experience.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://chat.whatsapp.com/KAbW8EzjHwAAPC4WKYp5eU" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Join Community</a>
+          <a href="#services" class="btn btn-outline">Explore Projects</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="hero-image.jpg" alt="TeamD students working on a robotics project" />
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do / About Section -->
+  <section class="what-we-do" id="about">
+    <h3 class="section-title">
+      <span class="line"></span>
+      <span>What We Do</span>
+      <span class="line"></span>
+    </h3>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h4>Startup Support</h4>
+        <p>Helping students turn innovative ideas into real-world solutions.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💻</div>
+        <h4>Technical Training</h4>
+        <p>Hands-on training sessions, workshops &amp; technical programs.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🏆</div>
+        <h4>Hackathons</h4>
+        <p>Participate, compete and win in national &amp; international events.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🤖</div>
+        <h4>Research &amp; Innovation</h4>
+        <p>Working on robotics, AI, IoT and next-gen technologies.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h4>Real World Impact</h4>
+        <p>Building projects that solve real-world problems.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">👥</div>
+        <h4>Community</h4>
+        <p>A collaborative community of future leaders.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h3 class="section-title">
+      <span class="line"></span>
+      <span>Our Services</span>
+      <span class="line"></span>
+    </h3>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h4>Workshops &amp; Bootcamps</h4>
+        <p>
+          Structured, hands-on sessions covering robotics, embedded systems,
+          AI, and modern engineering tools — built for every skill level.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h4>Mentorship Program</h4>
+        <p>
+          One-on-one guidance from senior students and industry mentors to
+          help you plan projects, internships, and career paths.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h4>Project Incubation</h4>
+        <p>
+          Turn your idea into a working prototype with access to lab space,
+          components, and a team of collaborators.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <h4>Event Hosting</h4>
+        <p>
+          From hackathons to tech talks, we organize events that connect
+          students with real challenges and real opportunities.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Section -->
+  <section class="feedback" id="feedback">
+    <h3 class="section-title">
+      <span class="line"></span>
+      <span>Share Your Feedback</span>
+      <span class="line"></span>
+    </h3>
+
+    <form class="feedback-form" id="feedback-form">
+
+      <div class="form-group">
+        <label for="feedback-category">Feedback Category</label>
+        <select id="feedback-category" name="category" required>
+          <option value="" disabled selected>Select a category</option>
+          <option value="website">Website Feedback</option>
+          <option value="community">Community Feedback</option>
+          <option value="event">Event Feedback</option>
+          <option value="workshop">Workshop Feedback</option>
+          <option value="hackathon">Hackathon Feedback</option>
+          <option value="general">General Suggestion</option>
+        </select>
+      </div>
+
+      <!-- Common fields -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fb-name">Full Name</label>
+          <input type="text" id="fb-name" name="fullname" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="fb-email">Email Address</label>
+          <input type="email" id="fb-email" name="email" placeholder="you@example.com" required />
+        </div>
+      </div>
+
+      <!-- ===================== Website Feedback ===================== -->
+      <fieldset class="feedback-fields" data-category="website" hidden>
+        <legend>Website Feedback</legend>
+
+        <div class="form-group">
+          <label for="web-page">Which page are you giving feedback about?</label>
+          <input type="text" id="web-page" name="website_page" placeholder="e.g. Home, Projects, Contact" />
+        </div>
+
+        <div class="form-group">
+          <label for="web-navigation">Was the website easy to navigate?</label>
+          <select id="web-navigation" name="website_navigation">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Somewhat">Somewhat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="web-issues">Did you face any issues or bugs?</label>
+          <textarea id="web-issues" name="website_issues" rows="3" placeholder="Describe any issues or bugs you faced"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="web-improvements">What improvements would you suggest?</label>
+          <textarea id="web-improvements" name="website_improvements" rows="3" placeholder="Your suggestions"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- ===================== Community Feedback ===================== -->
+      <fieldset class="feedback-fields" data-category="community" hidden>
+        <legend>Community Feedback</legend>
+
+        <div class="form-group">
+          <label for="com-satisfaction">How satisfied are you with the TeamD community?</label>
+          <select id="com-satisfaction" name="community_satisfaction">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Very Satisfied">Very Satisfied</option>
+            <option value="Satisfied">Satisfied</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Unsatisfied">Unsatisfied</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="com-helpful">Are discussions and support helpful?</label>
+          <select id="com-helpful" name="community_helpful">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Somewhat">Somewhat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="com-more">What would you like to see more of in the community?</label>
+          <textarea id="com-more" name="community_more" rows="3" placeholder="e.g. more events, discussions, resources"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="com-additional">Additional suggestions</label>
+          <textarea id="com-additional" name="community_additional" rows="3" placeholder="Any other suggestions"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- ===================== Event Feedback ===================== -->
+      <fieldset class="feedback-fields" data-category="event" hidden>
+        <legend>Event Feedback</legend>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ev-name">Event Name</label>
+            <input type="text" id="ev-name" name="event_name" placeholder="Name of the event" />
+          </div>
+          <div class="form-group">
+            <label for="ev-date">Event Date</label>
+            <input type="date" id="ev-date" name="event_date" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ev-rating">How would you rate the event?</label>
+          <select id="ev-rating" name="event_rating">
+            <option value="" disabled selected>Select a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Below Average</option>
+            <option value="1">1 - Poor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ev-liked">What did you like most?</label>
+          <textarea id="ev-liked" name="event_liked" rows="3" placeholder="What you enjoyed about the event"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="ev-improve">What can be improved?</label>
+          <textarea id="ev-improve" name="event_improve" rows="3" placeholder="Your suggestions for improvement"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- ===================== Workshop Feedback ===================== -->
+      <fieldset class="feedback-fields" data-category="workshop" hidden>
+        <legend>Workshop Feedback</legend>
+
+        <div class="form-group">
+          <label for="ws-name">Workshop Name</label>
+          <input type="text" id="ws-name" name="workshop_name" placeholder="Name of the workshop" />
+        </div>
+
+        <div class="form-group">
+          <label for="ws-content">Was the content useful?</label>
+          <select id="ws-content" name="workshop_content_useful">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Somewhat">Somewhat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ws-trainer">Was the trainer/instructor effective?</label>
+          <select id="ws-trainer" name="workshop_trainer_effective">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Somewhat">Somewhat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ws-future-topics">Which topics would you like in future workshops?</label>
+          <textarea id="ws-future-topics" name="workshop_future_topics" rows="3" placeholder="e.g. AI, Robotics, Web Development"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="ws-comments">Additional comments</label>
+          <textarea id="ws-comments" name="workshop_comments" rows="3" placeholder="Any other comments"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- ===================== Hackathon Feedback ===================== -->
+      <fieldset class="feedback-fields" data-category="hackathon" hidden>
+        <legend>Hackathon Feedback</legend>
+
+        <div class="form-group">
+          <label for="hk-name">Hackathon Name</label>
+          <input type="text" id="hk-name" name="hackathon_name" placeholder="Name of the hackathon" />
+        </div>
+
+        <div class="form-group">
+          <label for="hk-participation">Did you participate individually or as a team?</label>
+          <select id="hk-participation" name="hackathon_participation">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Individual">Individual</option>
+            <option value="Team">Team</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="hk-problem">Was the problem statement interesting?</label>
+          <select id="hk-problem" name="hackathon_problem_interesting">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Somewhat">Somewhat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="hk-mentoring">How was the mentoring and support?</label>
+          <select id="hk-mentoring" name="hackathon_mentoring">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Good">Good</option>
+            <option value="Average">Average</option>
+            <option value="Poor">Poor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="hk-suggestions">Suggestions for future hackathons</label>
+          <textarea id="hk-suggestions" name="hackathon_suggestions" rows="3" placeholder="Your suggestions"></textarea>
+        </div>
+      </fieldset>
+
+      <!-- ===================== General Suggestion ===================== -->
+      <fieldset class="feedback-fields" data-category="general" hidden>
+        <legend>General Suggestion</legend>
+
+        <div class="form-group">
+          <label for="gen-category">Category (Optional)</label>
+          <input type="text" id="gen-category" name="general_category" placeholder="e.g. Events, Website, Community" />
+        </div>
+
+        <div class="form-group">
+          <label for="gen-idea">Your suggestion or idea</label>
+          <textarea id="gen-idea" name="general_idea" rows="3" placeholder="Describe your suggestion or idea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="gen-why">Why do you think this improvement is important?</label>
+          <textarea id="gen-why" name="general_why" rows="3" placeholder="Explain why this matters"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="gen-comments">Any additional comments</label>
+          <textarea id="gen-comments" name="general_comments" rows="3" placeholder="Any other comments"></textarea>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary">Submit Feedback</button>
+      <p class="form-success" id="feedback-success">Thanks! Redirecting you to WhatsApp...</p>
+    </form>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <h3 class="section-title left">
+          <span class="line"></span>
+          <span>Get In Touch</span>
+        </h3>
+        <p class="contact-text">
+          Want to join TeamD, collaborate on a project, or invite us to an
+          event? Send us a message and we'll get back to you soon.
+        </p>
+
+        <ul class="contact-details">
+          <li><strong>Email:</strong> hello@teamd.org</li>
+          <li><strong>Phone:</strong> +91 98765 43210</li>
+          <li><strong>Location:</strong> Engineering Block, Campus Innovation Center</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="fullname" placeholder="Full Name" required />
+        <input type="tel" name="contact" placeholder="Contact Number" pattern="[0-9+\-\s]{7,15}" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+
+        <select name="status" required>
+          <option value="" disabled selected>Select your status</option>
+          <option value="Working Professional">Working Professional</option>
+          <option value="College Student">College Student</option>
+        </select>
+
+        <textarea name="message" placeholder="Additional Information" rows="5"></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-success" id="form-success">Thanks! Redirecting you to WhatsApp...</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 TeamD. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
